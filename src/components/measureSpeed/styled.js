@@ -7,6 +7,17 @@ export const Wrapper = styled.div`
   flex-direction: column;
   padding: 20px;
 
+  span {
+    display: inline-block;
+    background-color: #32de84;
+    min-width: 80px;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+
   h4 {
     text-align: center;
   }

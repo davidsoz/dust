@@ -78,7 +78,7 @@ function MeasureSpeedInPipe() {
 					<Input label="გაზომილი მმ.წყ.სვ" getValue={getMeasuredMM}/>
 					<Input label="გაზომილი ტემპერატურა" getValue={getMeasuredTemp}/>
 				</Styled.InputsWrapper>
-				<div style={{padding: "5px"}}>სიჩქარე, მ/წმ: {speed.toFixed(2)}</div>
+				<div style={{padding: "5px"}}>სიჩქარე, მ/წმ: <span>{speed.toFixed(2)}</span></div>
 				<button onClick={calculateSpeed}>Calculate</button>
 			</Styled.Wrapper>
 			<Styled.Wrapper>
@@ -86,7 +86,7 @@ function MeasureSpeedInPipe() {
 				<Styled.InputsWrapper>
 					<Input label="მილაკის ბუნიკის დიამეტრი" getValue={getBunikSize}/>
 				</Styled.InputsWrapper>
-				<div style={{padding: "5px"}}>ასპირატორი, ლ/წთ: {aspirator.toFixed(2)}</div>
+				<div style={{padding: "5px"}}>ასპირატორი, ლ/წთ: <span>{aspirator.toFixed(2)}</span></div>
 				<button onClick={calculateAsp}>Calculate</button>
 			</Styled.Wrapper>
 			<Styled.Wrapper>
@@ -98,7 +98,7 @@ function MeasureSpeedInPipe() {
 					<Input label="ტემპ. ასპირატ" getValue={getTempAsp}/>
 					<Input label="ტემპ. მილში" getValue={getTempPipe} />
 				</Styled.InputsWrapper>
-				<div style={{padding: "5px"}}>ასპირატორი, ლ/წთ: {aspiratorHot.toFixed(2)}</div>
+				<div style={{padding: "5px"}}>ასპირატორი, ლ/წთ: <span>{aspiratorHot.toFixed(2)}</span></div>
 				<button onClick={calculateAspHot}>Calculate</button>
 			</Styled.Wrapper>
 		</>
