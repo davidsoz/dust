@@ -1,8 +1,8 @@
 import { useState } from "react";
 import * as Styled from "./styled";
 
-const Input = ({ label, getValue, desabled }) => {
-	const [value, setValue] = useState("");
+const Input = ({ label, getValue, defaultValue }) => {
+	const [value, setValue] = useState(defaultValue || "");
 
 	const inputChangeHandler = (e) => {
 		if(e.target.value === ""){

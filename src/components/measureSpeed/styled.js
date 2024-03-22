@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   padding: 20px;
 
+  h4 {
+    text-align: center;
+  }
+
   button {
     padding: 10px 20px;
     background-color: dodgerblue;
