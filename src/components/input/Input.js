@@ -5,12 +5,15 @@ const Input = ({ label, getValue }) => {
 	const [value, setValue] = useState("");
 
 	const inputChangeHandler = (e) => {
-		if(e.target.value == 0){
+		if(e.target.value === ""){
 			setValue("")
 			getValue(0)
 			return;
 		}
-		setValue(Number(e.target.value))
+		if(value === "0" && e.target.value[1] !== ".") {
+			return;
+		}
+		setValue(e.target.value)
 		getValue(Number(e.target.value))
 	}
 
