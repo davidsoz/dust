@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as Styled from "./styled";
 
-const Input = ({ label, getValue }) => {
+const Input = ({ label, getValue, desabled }) => {
 	const [value, setValue] = useState("");
 
 	const inputChangeHandler = (e) => {

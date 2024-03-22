@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 3px;
+  padding: 20px;
+
   button {
     padding: 10px 20px;
     background-color: dodgerblue;
@@ -25,4 +26,10 @@ export const Wrapper = styled.div`
   button:active {
     background-color: #005f99;
   }
+`;
+
+export const InputsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `;
